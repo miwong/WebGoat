@@ -121,7 +121,7 @@ public abstract class LessonAdapter extends AbstractLesson {
     public void restartLesson() {
         // Do Nothing - called when restart lesson is pressed. Each lesson can do something
     }
-        
+
     private final static Integer DEFAULT_RANKING = new Integer(1000);
 
     /**

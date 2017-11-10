@@ -102,7 +102,8 @@ public class Catcher extends HammerHead
 				{
 					String name = (String) e.nextElement();
 					String value = session.getParser().getParameterValues(name)[0];
-					lesson.getLessonTracker(session).getLessonProperties().setProperty(name, value);
+                    String formattedName = name.replaceFirst("amp;", "");
+					lesson.getLessonTracker(session).getLessonProperties().setProperty(formattedName, value);
 				}
 			}
 			lesson.getLessonTracker(session).store(session, lesson);

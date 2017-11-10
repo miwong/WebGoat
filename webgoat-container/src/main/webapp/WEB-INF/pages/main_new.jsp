@@ -102,9 +102,9 @@
                         <div class="col-md-8">
                             <div class="col-md-12" align="left">
                                 <div class="panel" id="help-controls">
-                                    <button class="btn btn-primary btn-xs help-button" id="show-source-button">Show Source</button>
+                                    <!--button class="btn btn-primary btn-xs help-button" id="show-source-button">Show Source</button>
                                     <button class="btn btn-primary btn-xs help-button" id="show-solution-button">Show Solution</button>
-                                    <button class="btn btn-primary btn-xs help-button" id="show-plan-button">Show Plan</button>
+                                    <button class="btn btn-primary btn-xs help-button" id="show-plan-button">Show Plan</button-->
                                     <button class="btn btn-primary btn-xs help-button" id="show-hints-button">Show Hints</button>
                                     <button class="btn btn-xs help-button" id="restart-lesson-button">Restart Lesson</button>
                                 </div>
