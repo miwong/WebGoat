@@ -107,6 +107,7 @@ public class Catcher extends HammerHead
 				}
 			}
 			lesson.getLessonTracker(session).store(session, lesson);
+			lesson.handleRequest(session);
 
 			// BDM MC
 // WEB-173 - removed for testing, as plugin architecture would not allow this

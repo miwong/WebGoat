@@ -337,12 +337,14 @@ public class CreateDB
 		String insertData3 = "INSERT INTO pins VALUES ('4321432143214321', 4321, 'Jill')";
 		String insertData4 = "INSERT INTO pins VALUES ('1111111111111111', 7777, 'Jim')";
 		String insertData5 = "INSERT INTO pins VALUES ('1111222233334444', 2364, 'John')";
+		String insertData6 = "INSERT INTO pins VALUES ('9999888877776666', 5278, 'James')";
 		
 		statement.executeUpdate(insertData1);
 		statement.executeUpdate(insertData2);
 		statement.executeUpdate(insertData3);
 		statement.executeUpdate(insertData4);
 		statement.executeUpdate(insertData5);
+		statement.executeUpdate(insertData6);
 	
     }
 	
