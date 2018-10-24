@@ -338,6 +338,7 @@ public class CreateDB
 		String insertData4 = "INSERT INTO pins VALUES ('1111111111111111', 7777, 'Jim')";
 		String insertData5 = "INSERT INTO pins VALUES ('1111222233334444', 2364, 'John')";
 		String insertData6 = "INSERT INTO pins VALUES ('9999888877776666', 5278, 'James')";
+		String insertData7 = "INSERT INTO pins VALUES ('1234123412341234', 8546, 'Jacob')";
 		
 		statement.executeUpdate(insertData1);
 		statement.executeUpdate(insertData2);
@@ -345,6 +346,7 @@ public class CreateDB
 		statement.executeUpdate(insertData4);
 		statement.executeUpdate(insertData5);
 		statement.executeUpdate(insertData6);
+		statement.executeUpdate(insertData7);
 	
     }
 	
