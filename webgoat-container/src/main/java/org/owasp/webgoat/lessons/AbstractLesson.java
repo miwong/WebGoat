@@ -875,7 +875,7 @@ public abstract class AbstractLesson extends Screen implements Comparable<Object
      */
     public void handleRequest(WebSession s) {
         // call createContent first so messages will go somewhere
-        Form form = new Form(getFormAction(), Form.POST).setName("form").setEncType("");
+        Form form = new Form(getFormAction(), Form.GET).setName("form").setEncType("");
         form.addElement(createContent(s));
         setContent(form);
         s.getRequest().getRequestURL();
