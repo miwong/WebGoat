@@ -300,7 +300,7 @@ public class CreateDB
 
 	}
 
-	// creates the table pins which is used in the blind sql injection lesson
+	// creates the table credit which is used in the blind sql injection lesson
 	private void createBlindSQLLessonTable(Connection connection) throws SQLException
     {
 		Statement statement = connection.createStatement();
@@ -308,18 +308,18 @@ public class CreateDB
 		// Delete table if there is one
 		try
 		{
-		    String dropTable = "DROP TABLE pins";
+		    String dropTable = "DROP TABLE credit";
 		    statement.executeUpdate(dropTable);
 		}
 		catch (SQLException e)
 		{
-		    System.out.println("Info - Could not drop pins table");
+		    System.out.println("Info - Could not drop credit table");
 		}
 	
 		// Create the new table
 		try
 		{
-		    String createTableStatement = "CREATE TABLE pins ("
+		    String createTableStatement = "CREATE TABLE credit ("
 			    + "cc_number varchar(30),"
 			    + "pin int," 
 			    + "name varchar(20)" 
@@ -328,17 +328,18 @@ public class CreateDB
 		}
 		catch (SQLException e)
 		{
-		    System.out.println("Error creating pins table " + e.getLocalizedMessage());
+		    System.out.println("Error creating credit table " + e.getLocalizedMessage());
 		}
 	
 		// Populate it
-		String insertData1 = "INSERT INTO pins VALUES ('987654321098765', 1234, 'Joe')";
-		String insertData2 = "INSERT INTO pins VALUES ('1234567890123456', 4567, 'Jack')";
-		String insertData3 = "INSERT INTO pins VALUES ('4321432143214321', 4321, 'Jill')";
-		String insertData4 = "INSERT INTO pins VALUES ('1111111111111111', 7777, 'Jim')";
-		String insertData5 = "INSERT INTO pins VALUES ('1111222233334444', 2364, 'John')";
-		String insertData6 = "INSERT INTO pins VALUES ('9999888877776666', 5278, 'James')";
-		String insertData7 = "INSERT INTO pins VALUES ('1212343456567878', 2018, 'Jacob')";
+		String insertData1 = "INSERT INTO credit VALUES ('987654321098765', 1234, 'Joe')";
+		String insertData2 = "INSERT INTO credit VALUES ('1234567890123456', 4567, 'Jack')";
+		String insertData3 = "INSERT INTO credit VALUES ('4321432143214321', 4321, 'Jill')";
+		String insertData4 = "INSERT INTO credit VALUES ('1111111111111111', 7777, 'Jim')";
+		String insertData5 = "INSERT INTO credit VALUES ('1111222233334444', 2364, 'John')";
+		String insertData6 = "INSERT INTO credit VALUES ('9999888877776666', 5278, 'James')";
+		String insertData7 = "INSERT INTO credit VALUES ('1212343456567878', 2018, 'Jacob')";
+		String insertData8 = "INSERT INTO credit VALUES ('1324354657687980', 2856, 'Jenny')";
 		
 		statement.executeUpdate(insertData1);
 		statement.executeUpdate(insertData2);
@@ -347,7 +348,7 @@ public class CreateDB
 		statement.executeUpdate(insertData5);
 		statement.executeUpdate(insertData6);
 		statement.executeUpdate(insertData7);
-	
+		statement.executeUpdate(insertData8);
     }
 	
 	// creates the table salaries which is used in the lessons 

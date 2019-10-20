@@ -125,7 +125,10 @@ public abstract class AbstractLesson extends Screen implements Comparable<Object
     public AbstractLesson() {
         //based on the class name derive an id so the screenId is fixed, should not give clashes based on
         //the fact we use the classname and the size is limited
-        id = abs(this.getClass().getSimpleName().hashCode());
+        //id = abs(this.getClass().getSimpleName().hashCode());
+
+        // ECE568 - Modify the screen ID's.
+        id = abs(this.getClass().getName().hashCode());
     }
 
     /**
