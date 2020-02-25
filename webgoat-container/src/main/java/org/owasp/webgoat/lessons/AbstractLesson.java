@@ -128,7 +128,8 @@ public abstract class AbstractLesson extends Screen implements Comparable<Object
         //id = abs(this.getClass().getSimpleName().hashCode());
 
         // ECE568 - Modify the screen ID's.
-        id = abs(this.getClass().getName().hashCode());
+        String lessonId = "ECE568:" + this.getClass().getName();
+        id = abs(lessonId.hashCode());
     }
 
     /**

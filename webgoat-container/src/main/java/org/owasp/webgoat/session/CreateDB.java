@@ -340,6 +340,7 @@ public class CreateDB
 		String insertData6 = "INSERT INTO credit VALUES ('9999888877776666', 5278, 'James')";
 		String insertData7 = "INSERT INTO credit VALUES ('1212343456567878', 2018, 'Jacob')";
 		String insertData8 = "INSERT INTO credit VALUES ('1324354657687980', 2856, 'Jenny')";
+		String insertData9 = "INSERT INTO credit VALUES ('1234123412341234', 4862, 'Jennifer')";
 		
 		statement.executeUpdate(insertData1);
 		statement.executeUpdate(insertData2);
@@ -349,6 +350,7 @@ public class CreateDB
 		statement.executeUpdate(insertData6);
 		statement.executeUpdate(insertData7);
 		statement.executeUpdate(insertData8);
+		statement.executeUpdate(insertData9);
     }
 	
 	// creates the table salaries which is used in the lessons 
